@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anybody', cursive;
+    font-size: 16px;
+    background-color: #020100;
+}
+
+/* HEADER STYLES */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #ED1C24;
+}
+
+#header-img {
+    width: 100px;
+    height: auto;
+    padding: 1em;
+}
+
+#nav-bar {
+    width: 50%;
+    align-self: center;
+}
+
+#nav-bar ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    padding-right: 1em;
+}
+
+#nav-bar ul li {
+    padding: 1em;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: #020100;
+    font-weight: bolder;
+}
+
+#nav-bar a:hover, h2:hover {
+    color: #F1D302;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 8em;
+    color: #FDFFFC;
+}
+
+section {
+    margin: 2em 0;
+}
+
+h2 {
+    text-align: center;
+    padding: 1em;
+    font-size: 3rem;
+}
+
+/* VIDEO SECTION */
+
+.video-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* MENU SECTION */
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.menu-item h3 {
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 300px;
+    height: auto;
+}
+
+.menu-item img:hover {
+    border: 5px solid #F1D302;
+    cursor: pointer;
+}
+
+/* SIGN UP SECTION */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+input {
+    padding: 0.5em;
+    margin: 1em;
+    font-size: 1.25rem;
+    border: 3px solid #F1D302;
+    border-radius: 2px;
+}
+
+input[type="submit"] {
+    width: auto;
+    margin: 0 auto;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    font-family: 'Anybody', cursive;
+    background-color: #F1D302;
+    color: #020100;
+}
+
+input[type="submit"]:hover {
+    cursor: pointer;
+    color: #F1D302;
+    background-color: #020100;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+    #nav-bar ul {
+        flex-direction: column;
+        text-align: right;
+    }
+
+    #nav-bar ul li {
+        padding: 0.25em;
+    }
+
+    main {
+        margin-top: 5em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
